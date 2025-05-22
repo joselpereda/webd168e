@@ -6,7 +6,7 @@ $text-color: #333;
 $light-gray: #ecf0f1;
 $font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-// Base reset and typography
+// Base Reset
 * {
   margin: 0;
   padding: 0;
@@ -18,79 +18,69 @@ body {
   background-color: $background-color;
   color: $text-color;
   line-height: 1.6;
-  padding: 2rem;
 }
 
 // Headings
+h1, h2, h3, h4 {
+  font-weight: 600;
+}
+
 h1 {
-  font-size: 2.5rem;
   color: $primary-color;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 h2 {
   color: $secondary-color;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
-// Paragraphs
-p.intro {
+// Intro paragraphs
+.intro {
   font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 2rem auto;
-  text-align: center;
   color: darken($text-color, 10%);
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
 }
 
-p {
-  margin-bottom: 1rem;
-}
-
-// Container and Columns
-.container {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.column {
-  background-color: white;
+// Card customization
+.card {
+  border: none;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
-  width: 300px;
   transition: transform 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
   }
 
-  img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 1rem;
+  .card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
 
-  ul {
-    list-style-type: disc;
-    padding-left: 1.2rem;
-    li {
-      margin-bottom: 0.4rem;
-    }
+  .card-title {
+    color: $primary-color;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: $text-color;
+  }
+
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+    color: $text-color;
+    font-size: 0.95rem;
   }
 }
 
-// Responsive Design
+// Responsive tweaks
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .column {
-    width: 90%;
+  .card {
+    margin-bottom: 1.5rem;
   }
 }

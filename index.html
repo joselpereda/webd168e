@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Page title-->
-    <title>Jose Pereda's Introduction</title>
-    <link rel="stylesheet" href="lesson01/css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jose Pereda's Introduction</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="lesson01/css/main.css" />
 </head>
 <body>
-    <!--Heading-->
-    <h1>Who is Jose Pereda?</h1>
-    <!--Introduction-->
-    <p class="intro">Jose Pereda was born in a rural town in Jalisco, Mexico, in a region commonly known as tequila country. He as in parents immigrated to the United States in 1979. He and his six siblings were raised in the suburbs of Los Angeles. As of today, he is the only one of those siblings that decided to leave the nest and move to a different city. Married nearly 20 years. His wife and he have five children, in every age range. The eldest is 24 and the youngest just over two years of age. Up until a few years back Mr. Pereda managed business operations for a global conglomerate. Fist in the United States and later in Latin America. This fact provided the opportunity for him to visit a variety of country. And yes, tons of airports and hotels. </P>
-    <p class="intro">Let's dive a little deeper...</p>
-    
-    <!--Page layout, consisting of three columns-->
-    <!--Each column consists of a heading, paragraph, and image or unordered list-->
-    <div class="container">
-        <div class="column">
-            <!--Professional career section-->
-            <h2>Professional Career</h2>
-            <p>During most of his professional career Mr. Pereda worked in the technology industry. Software development to be move precise. His skills range from hardware design, business development, product management, and technical sales. Among his accomplishments was introducing a new line of business with the main telecommunications companies in Latin America and the Caribbean. Within his role as business development manager, he was privileged with identifying new innovated products and services, shepherding them through incubation and bringing some of them to market.</p>
-            <img src="lesson01/images/selfv3.jpg" alt="Jose Pereda selfie">
+
+  <div class="container py-5">
+    <!-- Heading -->
+    <header class="text-center mb-5">
+      <h1 class="display-4 fw-bold text-primary">Who is Jose Pereda?</h1>
+      <p class="lead intro text-muted">
+        Jose Pereda was born in a rural town in Jalisco, Mexico—commonly known as tequila country. He and his family immigrated to the U.S. in 1979 and were raised in the Los Angeles suburbs. Today, he's the only sibling to leave the nest. Married for nearly 20 years, Jose and his wife have five children, ranging in age from toddler to adult. His professional journey has taken him across the globe—especially Latin America—while working in leadership roles in global enterprises.
+      </p>
+      <p class="intro text-muted">Let's dive a little deeper...</p>
+    </header>
+
+    <!-- Three-column layout -->
+    <div class="row g-4">
+      
+      <!-- Professional Career -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="lesson01/images/selfv3.jpg" class="card-img-top" alt="Jose Pereda selfie" />
+          <div class="card-body">
+            <h2 class="card-title h5 text-secondary">Professional Career</h2>
+            <p class="card-text">
+              Jose has built his career in the tech industry—specifically software and hardware development. His experience spans hardware design, business development, product management, and technical sales. As a business development manager, he led initiatives with top telecommunications companies in Latin America and the Caribbean, helping bring innovative solutions to market.
+            </p>
+          </div>
         </div>
-        <div class="column">
-            <!--Family section-->
-            <h2>Family</h2>
-            <p>Behind Mr. Pereda is a beautiful family consisting of his wife and five children: two daughters and three boys. In all age groups, as mentioned above. His family mantra is "work for what you want...don't expect anyone to give you anything." Said mantra has created a family of go-getters. At times that has meant that mom and dad have also been stretched with their time and resources to enable the pursuit of their goals. Meet his two girls.</p>
-            <img src="lesson01/images/familyv2.jpg" alt="Pereda daughters">
+      </div>
+
+      <!-- Family -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="lesson01/images/familyv2.jpg" class="card-img-top" alt="Pereda daughters" />
+          <div class="card-body">
+            <h2 class="card-title h5 text-secondary">Family</h2>
+            <p class="card-text">
+              Jose is supported by a loving family—his wife and five children (two girls and three boys). Their family mantra, "Work for what you want—don’t expect anyone to give you anything," drives them to be ambitious and self-reliant. It’s a philosophy that pushes both parents to stretch their time and resources to enable their children’s pursuits.
+            </p>
+          </div>
         </div>
-        <div class="column">
-            <!--Countries visited section-->
-            <h2>Countries Visited</h2>
-            <p>Work enabled Mr. Pereda and his family to visit and live in many countries and their respective cities. The list is a bit long and would likely take up too much space. Below is a taste. In short, he, and on many occasions with his family, they have set foot in most countries throughout Latin America, North America, part of Asia and decent number in Europe.</p>
-            <ul>
-                <li>Brazil</li>
-                <li>Argentina</li>
-                <li>Chile</li>
-                <li>Peru</li>
-                <li>Colombia</li>
-                <li>Dominican Republic</li>
-                <li>Guatemala</li>
-                <li>Ecuador</li>
-                <li>China</li>
-                <li>France</li>
-                <li>Spain</li>
-                <li>Amsterdam</li>
-                <li>Canada</li>
+      </div>
+
+      <!-- Countries Visited -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h2 class="card-title h5 text-secondary">Countries Visited</h2>
+            <p class="card-text">
+              Thanks to his career, Jose and his family have had the chance to travel and live in numerous countries. Below is a small selection of the many places he’s explored:
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Brazil</li>
+              <li class="list-group-item">Argentina</li>
+              <li class="list-group-item">Chile</li>
+              <li class="list-group-item">Peru</li>
+              <li class="list-group-item">Colombia</li>
+              <li class="list-group-item">Dominican Republic</li>
+              <li class="list-group-item">Guatemala</li>
+              <li class="list-group-item">Ecuador</li>
+              <li class="list-group-item">China</li>
+              <li class="list-group-item">France</li>
+              <li class="list-group-item">Spain</li>
+              <li class="list-group-item">Amsterdam</li>
+              <li class="list-group-item">Canada</li>
             </ul>
+          </div>
         </div>
+      </div>
+      
     </div>
+  </div>
+
 </body>
 </html>
